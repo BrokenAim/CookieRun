@@ -112,7 +112,7 @@ var user = {
         if(a%5==0){//5프레림마다(0,1,2,3,4 이후 1씩 img_index 증가)
             this.img_index = (this.img_index+1)%4
         }
-        if(user.y<500){
+        if(user.y<500&&gameover==false){
             ctx.drawImage(img_user[3], this.x, this.y, 140, 120);
         }
         if(gameover==true){
